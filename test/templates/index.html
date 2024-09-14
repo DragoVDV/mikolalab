@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Binary test task</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="static/css/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:100, 300, 700, 900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<nav class="navbar navbar-fixed-top">
+  <div class="container">
+    <a href="#home" class="logo">ЛевТур</a>
+    <a href="#" class="menu"><i class="fa fa-bars"></i></a>
+    <ul id="main_nav">
+      <li><a class="active" href="#home">Головна</a></li>
+      <li><a href="#users">Видатні місця</a></li>
+      <li><a href="#contacts">Зв'язатися</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section id="home">
+  <div class="container-fluid home-background">
+    <div class="container">
+      <div class="row">
+        <div class="section-first">
+          <div class="col-md-6">
+            <h1>Екскурсії по<br><span>по місту Львів</span></h1>
+            <p>Ми розкриваємо унікальні історії міста, знайомимо з його архітектурними перлинами та культурними традиціями. Наші досвідчені гіди створюють атмосферу захоплення та відкриття, роблячи кожну прогулянку незабутньою. Відкрийте для себе Львів з нами!</p>
+            <div class="button_wrapper">
+              <!-- <button class="button button_blue" href="#">Play</button>
+              <button class="button button_green" href="#">Button</button> -->
+            </div>
+          </div>
+          <div class="col-md-5 col-md-offset-1">
+            <img class="top-image" src="{{url_for('static', filename='img/teatr-021.jpg')}}" alt="Nice image here">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="users">
+  <div class="container">
+    <div class="row">
+      <h1 class="user-head">Львів</h1>
+      <h5 class="user-subhead">Видатні місця</h5>
+      <div class="thin-sep-white"></div>
+
+      <div class="col-md-3 col-sm-6 col-xs-6 portfolio_item">
+        <img src="{{url_for('static', filename='img/Plocha runok (1).jpg')}}" alt="First image here" />
+        <div class="port_item_count">
+          <h3>Площа Ринок</h3>
+          <p>Центр Львова</p>
+          <button class="popup_content" onclick="window.location.href='https:/lviv.travel/ua/places/attractions/ploshcha-rinok';">Читати більше</button>
+
+
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 col-xs-6 portfolio_item">
+        <img src="img\палац потоцьких.jpg" alt="Second image here" />
+        <div class="port_item_count">
+          <h3>Палац Потоцьких</h3>
+          <p>вул. Коперника, 15</p>
+          <button class="popup_content" onclick="window.location.href='https:/lviv.travel/ua/places/attractions/palats-pototskikh';">Читати більше</button>
+        </div>
+
+      </div>
+
+      <div class="col-md-3 col-sm-6 col-xs-6 portfolio_item">
+        <img src="img\arhikafedralniy-sobor-svyatogo-yura-1 (2).jpg" alt="Alt" />
+        <div class="port_item_count">
+          <h3>Собор Святого Юра</h3>
+          <p>пл. Святого Юра, 5</p>
+          <button class="popup_content" onclick="window.location.href='https:/lviv.travel/ua/places/attractions/cobor-sviatogo-iura';">Читати більше</button>
+        </div>
+
+      </div>
+
+      <div class="col-md-3 col-sm-6 col-xs-6 portfolio_item">
+        <img src="img\Lwow_kaplica_Boimow_2.jpg" alt="Alt" />
+        <div class="port_item_count">
+          <h3>Каплиця Боїмів</h3>
+          <p>пл. Катедральна, 1</p>
+          <button class="popup_content" onclick="window.location.href='https:/lviv.travel/ua/places/attractions/kaplytsia-boimiv';">Читати більше</button>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 col-xs-6 portfolio_item">
+        <img src="img\skalnie-steny.jpg" alt="Alt" />
+        <div class="port_item_count">
+          <h3>Тустань</h3>
+          <p>с. Урич, Львівська обл.</p>
+          <button class="popup_content" onclick="window.location.href='https:/lviv.travel/ua/places/attractions/tustan';">Читати більше</button>
+        </div>
+      </div>
+
+      <div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category-2">
+        <img src="img\lviv opera.jpg" alt="Alt" />
+        <div class="port_item_count">
+          <h3>Оперний Театр</h3>
+          <p>Центр</p>
+          <button class="popup_content" onclick="window.location.href='https:/lviv.travel/ua/places/attractions/teatr-operi-ta-baletu-im-solomiyi-krushelnitskoyi';">Читати більше</button>
+        </div>
+      </div>
+
+      <div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item">
+        <img src="img\park-vysokii-zamok-vo-lvove_2.jpg" alt="Alt" />
+        <div class="port_item_count">
+          <h3>Високий замок</h3>
+          <p>вул. Високий Замок 1.</p>
+          <button class="popup_content" onclick="window.location.href='https:/karpatium.com.ua/misto-lviv-shcho-podyvytys-ta-de-vidpochyty/vysokyi-zamok-u-lvovi-zamkova-hora';">Читати більше</button>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 col-xs-6 portfolio_item">
+        <img src="img\Tyr_870.jpg" alt="Alt" />
+        <div class="port_item_count">
+          <h3>Золочівський замок</h3>
+          <p>м. Золочів, вул. Тернопільська, 5</p>
+          <button class="popup_content" onclick="window.location.href='https:/lviv.travel/ua/places/attractions/zolochivskii-zamok';">Читати більше</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contacts">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+        <h1 class="contact-head">Зв'язатися</h1>
+        <h5 class="contact-second">Записатися на тур по місту Львів</h5>
+        <div class="thin-sep"></div>
+      </div>
+      <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 all">
+        <div class="col-md-8 col-sm-8 left-contact-side nopadding">
+          <h3 class="motivation-header">Запис</h3>
+          <div class="inside">
+            <form id = 'send_form'class="main_form" method='POST'>
+              <label class="form-group">
+                <input type="text" name="name" placeholder="Ім'я та Прізвище" data-validation-required-message="name" required />
+              </label>
+              <label class="form-group">
+                <input type="phone" name="email" placeholder="Ваш телефон" maxlength="10" required/>
+              </label>
+              <label class="text-group">
+                <textarea name="message" placeholder="Побажання" required></textarea>
+              </label>
+              <!-- <a href="#contacts" class="send">Записатися</a>  -->
+              <button type = 'submit'>Записатися</button>
+            </form>
+          </div>
+          <div class="col-md-8 col-sm-4 feedback nopadding">
+            <img src="img/open.png" alt="">
+            <h5>Дякую, очікуйте дзвінка від гіда </h5>
+            <button class="button button_blue one_more" href="#">Назад</button>
+          </div>
+        </div>
+        <div class="col-md-4 right-contact-side nopadding">
+          <h1>Інформація</h1>
+          <ul>
+            <li>Ми зв'яжемося з вам протягом п'яти годин </li>
+
+          </ul>
+          <h1>Відміна замовлення</h1>
+          <ul>
+            <li>Протягом 4-ох годин</li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<footer class="main-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-3 nopadding">
+        <p class="copyright"> &copy; 2024 Брунарський Микола</p>
+      </div>
+      <div class="col-md-4 col-sm-6 nopadding">
+        <div class="footer-menu">
+          <ul>
+            <li><a class="active" href="#home">Головна</a></li>
+            <li><a href="#users">Видатні місця</a></li>
+            <li><a href="#contacts">Зв'язатися</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-3 nopadding">
+        <div class="social-wrap">
+          <ul>
+            <li><a href="#" target="blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" target="blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#" target="blank"><i class="fa fa-facebook"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
